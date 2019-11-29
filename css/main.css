@@ -2204,7 +2204,7 @@ header .logo a {
 }
 #stats .icon-part i {
 	font-size: 4.8rem;
-	color: #000000;
+	color: #FFFFFF;
 }
 #stats .stat-count {
 	color: #FFFFFF;
@@ -2216,11 +2216,13 @@ header .logo a {
 }
 #stats .stat-title {
 	/* color: rgba(255, 255, 255, 0.5); */
-	color: #FFFFFF;
+	/* color: #FFFFFF; */
+	color: #d2cad2;
 	font-size: 2.6rem;
 	margin-top: 1.2rem;
 	margin-bottom: 0;
 	font-family: "poppins-medium", sans-serif;
+	text-transform: none;
 }
 
 /**
