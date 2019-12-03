@@ -658,7 +658,7 @@ textarea {
  * small screens - (_grid.scss)
  * --------------------------------------------------------------- 
  */
-@media screen and (max-width:1024px) {
+@media screen and (max-width:4024px) {
 	.block-s-1-6 .bgrid {
 		width: 16.66667%;
 	}
@@ -669,6 +669,7 @@ textarea {
 
 	.block-s-1-3 .bgrid {
 		width: 33.33333%;
+		border-left: none;
 	}
 
 	.block-s-1-2 .bgrid {
@@ -690,6 +691,13 @@ textarea {
 	.block-s-1-2 .bgrid:nth-child(2n+1) {
 		clear: both;
 	}
+
+
+	.block-s-1-3 .bgrid:nth-child(3n),
+	.block-s-1-3 .bgrid:nth-child(3n - 1){
+		border-left: 1px solid rgba(255, 255, 255, 0.12);
+	}
+
 
 }
 
