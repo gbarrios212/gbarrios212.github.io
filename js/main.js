@@ -227,7 +227,7 @@
 			$.ajax({      	
 
 		      type: "POST",
-		      url: "inc/sendEmail.php",
+				url: "https://www.enformed.io/5ngu6zki/",
 		      data: $(form).serialize(),
 		      beforeSend: function() { 
 
