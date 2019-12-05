@@ -227,7 +227,7 @@
 			$.ajax({      	
 
 		      type: "POST",
-				url: "https://www.enformed.io/5ngu6zki/",
+			  url: "https://www.enformed.io/5ngu6zki/",
 		      data: $(form).serialize(),
 		      beforeSend: function() { 
 
@@ -245,6 +245,7 @@
 	            }
 	            // There was an error
 	            else {
+					debugger;
 	            	sLoader.fadeOut(); 
 	               $('#message-warning').html(msg);
 		            $('#message-warning').fadeIn();
