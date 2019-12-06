@@ -236,16 +236,17 @@
 			  }
 			//   ,
 		    //   success: function(msg) {
-
+			// 	  debugger;
 	        //     // Message was sent
-	        //     if (msg == 'OK') {
+	        //     if (statusText == 'OK') {
 	        //     	sLoader.fadeOut(); 
 	        //        $('#message-warning').hide();
 	        //        $('#contactForm').fadeOut();
 	        //        $('#message-success').fadeIn();   
 	        //     }
-	        //     // There was an error
+	            // There was an error
 	        //     else {
+			// 		debugger;
 	        //     	sLoader.fadeOut(); 
 	        //        $('#message-warning').html(msg);
 		    //         $('#message-warning').fadeIn();
@@ -253,7 +254,7 @@
 
 		    //   },
 		    //   error: function() {
-
+			// 	  debugger;
 		    //   	sLoader.fadeOut(); 
 		    //   	$('#message-warning').html("Something went wrong. Please try again.");
 		    //      $('#message-warning').fadeIn();
@@ -262,16 +263,23 @@
 
 		  })
 		 .then((response) => {
+			 debugger;
 			 sLoader.fadeOut();
 	               $('#message-warning').hide();
 	               $('#contactForm').fadeOut();
 	               $('#message-success').fadeIn();   
 				}, 
 				(response) => {
-					debugger;
-					sLoader.fadeOut();
-		      	$('#message-warning').html("Something went wrong. Please try again.");
-		         $('#message-warning').fadeIn();
+					if (response.statusText === "OK") {
+						sLoader.fadeOut();
+						$('#message-warning').hide();
+						$('#contactForm').fadeOut();
+						$('#message-success').fadeIn();  
+					} else {
+						sLoader.fadeOut();
+						$('#message-warning').html("Something went wrong. Please try again.");
+						$('#message-warning').fadeIn();
+					}
 
 				})
 		  ;     		
