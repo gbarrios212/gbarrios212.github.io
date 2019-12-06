@@ -270,7 +270,7 @@
 	               $('#message-success').fadeIn();   
 				}, 
 				(response) => {
-					debugger;
+					// debugger;
 					if (response.statusText === "OK") {
 						sLoader.fadeOut();
 						$('#message-warning').hide();
