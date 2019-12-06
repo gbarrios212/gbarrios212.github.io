@@ -2236,7 +2236,7 @@ header .logo a {
  */
 @media only screen and (max-width:1024px) {
 	#stats .stat:nth-child(n) {
-		border-left: 1px solid rgb(182, 0, 215);
+		/* border-left: 1px solid rgb(182, 0, 215); */
 		padding-bottom: 1.5rem;
 	}
 	#stats .stat:nth-child(3n+1) {
@@ -2245,11 +2245,15 @@ header .logo a {
 }
 @media only screen and (max-width:768px) {
 	#stats .stat:nth-child(n) {
-		border-left: 1px solid rgb(182, 0, 215);
+		border-right: 1px solid rgba(255, 255, 255, 0.12);
+		border-left: none;
 	}
-	#stats .stat:nth-child(2n+1) {
+	#stats .stat:nth-child(2n) {
+		border-right: none;
+	}
+	/* #stats .stat:nth-child(2n+1) {
 		border: none;
-	}
+	} */
 }
 @media only screen and (max-width:600px) {
 	#stats .stat:nth-child(n) {
